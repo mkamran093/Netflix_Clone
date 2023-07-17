@@ -79,6 +79,7 @@ img {
   right: 0;
   transform: translate(-50%, -50%);
   font-weight: 700;
+  text-decoration: none;
 }
 
 .showcase-content {
@@ -170,6 +171,7 @@ Section {
 
 .contents p {
   width: 80%;
+  font-size: 1.5rem;
 }
 
 .contents h2 {
@@ -178,11 +180,7 @@ Section {
   width: 60%;
 }
 
-.contents p {
-  font-size: 1.5rem;
-}
-
-Section img {
+section img {
   width: 500px;
 }
 
@@ -197,6 +195,9 @@ Section img {
 .accordion {
   max-width: 900px;
   margin-top: 100px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .accordion h1 {
@@ -256,12 +257,13 @@ Section img {
 .accordion a {
   font-size: 1.5rem;
   text-decoration: none;
-  margin: 50px 0 50px 40%;
+  margin: 50px auto;
 }
 
 .footer {
   border-top: 8px solid rgb(66, 65, 65);
   height: 60vh;
+  width: 100vw;
   background: #000;
   color: white;
   padding: 5% 0 0 15%;
@@ -283,4 +285,129 @@ Section img {
 
 .footer a {
   color: white;
+}
+
+@media (max-width: 960px) {
+  .showcase {
+    height: 70vh;
+  }
+
+  .showcase-content {
+    margin-top: 5rem;
+  }
+
+  .tvSection img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 835px) {
+  .showcase-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .contents h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .contents h2 {
+    font-size: 1.8rem;
+  }
+
+  .contents p {
+    font-size: 1.2rem;
+  }
+
+  .tvSection img {
+    width: 300px;
+  }
+
+  Section img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 615px) {
+  .showcase {
+    height: 80vh;
+  }
+
+  .showcase-top img,
+  .showcase-top a {
+    margin: 5px 0 0 20px;
+  }
+
+  #p1 {
+    margin: 0;
+  }
+
+  #p2 {
+    margin: 0;
+  }
+
+  .inputs {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inputs input {
+    margin: 10px 0;
+  }
+
+  .inputs a {
+    padding: 10px 0;
+    margin: 0;
+    width: 200px;
+  }
+}
+
+@media (max-width: 545px) {
+  header,
+  section,
+  footer {
+    width: 100vw;
+  }
+
+  .showcase {
+    height: 90vh;
+  }
+
+  .showcase-content {
+    margin-top: 80px;
+    width: 75vw;
+  }
+
+  .showcase-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contents {
+    padding: 0;
+    width: 500px;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  .contents h2 {
+    margin: 0 auto;
+  }
+
+  .contents p {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .inputs input {
+    width: 300px;
+  }
 }
